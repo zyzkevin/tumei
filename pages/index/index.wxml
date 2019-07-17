@@ -1,24 +1,27 @@
-<view class="list clearfix">
-    <view class="list-item" wx:for="{{indexList}}">
-      <navigator url="../bookList/bookDetails?title={{item.bookName}}&id={{item.id}}&ch={{item.isChinese}}" hover-class="navigator-hover"> <image src="{{item.bookUrl}}" /></navigator>
-      <view class="book-name">
-         <navigator url="../bookList/bookDetails?title={{item.bookName}}&id={{item.id}}&ch={{item.isChinese}}" hover-class="navigator-hover"> 
-         {{item.bookName}}
-         </navigator>
-     </view>
-    </view>
+<view class="container">
 
-    <view class="menus">
-    <block wx:if="{{is_chinese === false}}">
-    <image class="play-bar-button" src="../../images/en.png"   bindtap="to_chinese"></image>
-    </block>
-    <block wx:if="{{is_chinese === true}}">
-    <image class="play-bar-button" src="../../images/zhong.png"   bindtap="to_english"  ></image>
-    </block>
-      <!--<view class="menu-list" id="menu-list">
-        <view>本机书架</view>
-        <view>wifi传书</view>
-        <view>云书架</view>        
-      </view>-->
-    </view>
+<view class="title">
+    关于我们
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}"  
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">  
+         <block wx:for="{{imgUrls}}">  
+           <swiper-item>  
+              <navigator url="{{item.link}}" hover-class="navigator-hover">  
+               <image src="{{item.url}}" class="slide-image" width="355" height="150" mode="aspectFit"/>  
+              </navigator>  
+           </swiper-item>  
+         </block>  
+ </swiper>  
+
+<view class="body"> 
+    <text> Cheese Radio（北美留学芝士广播）灵感源于知识与芝士的相同发音，由北美留学生网旗下的美国本科留学团队倾力打造。以10年（2009-2019）亲历学生案例为资源，致力于传播正确的北美留学知识以及那些充满正能量的留学生故事与思想。
+
+  办公地址：
+  深证市福田区卓越大厦N308
+  联系电话：
+  11111111111
+  </text>
+</view>
 </view>

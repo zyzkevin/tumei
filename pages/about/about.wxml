@@ -1,11 +1,26 @@
-<view class="title">
-    关于我们
-</view>
-
-<view class="body"> 
-    闪阅 SpeedRead将快速阅读带到微信小程序的平台，通过快速串行视觉演示(RSVP)达到训练高效阅读的方法。内部"发声"(Vocalizing) 习惯是阅读速度的限制因素，而RSVP通过快速呈现字词来消除了内心的默读。RSVP也能让人们在高速下不丢失文章的理解能力。
-闪阅 SpeedRead则是结合了快速阅读和碎片化阅读，让读者在最短的时间内获得最全面的知识。
-闪阅 SpeedRead目前在测试阶段，源代码在
-https://github.com/kyzzhang/shanyue
-，欢迎大家学习，使用，交流，也可以在关于小程序提出意见反馈。
+<view class="book preserve-3d">
+   <view class="now_page point">
+       <view class="book-page">
+          <text>第三页</text>
+       </view>
+   </view>
+ 
+   <view class="now_page point">
+       <view class="book-page">
+          <text>第二页</text>
+       </view>
+   </view>
+ 
+   <view class="now_page point">
+       <view class="book-page ">
+          <text>第一页</text>
+       </view>
+   </view>
+ 
+ <!--封面-->
+   <view class="point now_page">
+        <view class="book-page first-page">
+           <text>封面</text>
+        </view>
+   </view>
 </view>

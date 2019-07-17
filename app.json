@@ -1,15 +1,13 @@
 {
   "pages": [
+    "pages/welcome/welcome",
     "pages/index/index",
-    "pages/bookList/bookDetails",
-    "pages/about/about",
-    "pages/pageReadere/pageReadere",
-    "pages/pageReader/pageReader"
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#3F69AA",
-    "navigationBarTitleText": "闪阅 SpeedRead",
+    "navigationBarTitleText": "北美留学芝士广播",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -38,5 +36,6 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
