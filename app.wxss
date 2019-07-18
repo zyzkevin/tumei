@@ -5,3 +5,20 @@ text{
 page{
   background: #efefef;
 }
+/*
+.title{
+  text-align: center;
+  font-size: 38rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.body {
+  font-size: 28rpx;
+  color: rgb(0, 0, 0);
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 30rpx;
+  padding-top: 40rpx;
+  padding-bottom: 200rpx;
+}
+*/

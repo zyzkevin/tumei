@@ -1,0 +1,19 @@
+<!--pages/postDetails/postDetails.wxml-->
+<view class="container">
+  <image class="header-image" src="{{coverPage}}" mode="aspectFill"></image>
+  <view class="author-data">
+    <image class="author-image" src="{{author.avatar}}"></image>
+    <text class="author">{{author.name}}</text>
+  </view>
+  <text class="title">{{title}}</text>
+  <view class="tool">
+    <view class="circle-image">
+      <image wx:if="{{collectionStatus}}" catchtap="onCollectionTap" src="/images/collection.png"></image>
+      <image wx:else catchtap="onCollectionTap" src="/images/collection-anti.png"></image>
+      <image catchtap="onShareTap" class="share-image" src="/images/share.png"></image>
+    </view>
+    <view class="tool-line"></view>
+  </view>
+    <text class="post-content">{{content}}</text>
+</view>
+

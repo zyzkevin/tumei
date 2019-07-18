@@ -15,7 +15,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "9.9.9",
 	"appid": "wx2f12f824de9150eb",
-	"projectname": "%E9%97%AA%E6%9C%88",
+	"projectname": "tumei-miniapp",
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
