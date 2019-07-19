@@ -1,50 +1,38 @@
-.single-movie-container {
-  margin-bottom: 20rpx;
-}
-.movie-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 22rpx;
-}
-
-.postImg{
-  width: 200rpx;
-  height: 270rpx;
-  padding-bottom: 10rpx;
-}
-.postTitle{
-    font-size: 24rpx;
-  margin-bottom: 16rpx;
-}
-.grid-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row;
-  padding-top: 40rpx;
-  padding-bottom: 20rpx;
-}
-
 
 .container{
-   background: #fff;
-
+  height:100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display:flex;  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
-.body {
-  font-size: 28rpx;
-  color: rgb(0, 0, 0);
-  margin-left: 40rpx;
-  margin-right: 40rpx;
-  margin-bottom: 30rpx;
-  padding-top: 40rpx;
-  padding-bottom: 200rpx;
+.image-parent {
+  position: relative;
 }
-.title{
+.image{
+  width: 550rpx;
+  height: 300rpx; 
+}
+
+.child {
+  width: 150px;
+  height: 30px;  
+  position: absolute;
+  left: 0;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   text-align: center;
-  font-size: 38rpx;
-  padding-top: 20rpx;
-  padding-bottom: 20rpx;
+  color:white;
+  font-weight: 900;
+  font-size: 26px;
+}  
+
+.navigator-hover{
+  opacity: 0.9;
+  background: #f7f7f7;
 }

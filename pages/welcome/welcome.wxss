@@ -12,8 +12,8 @@ page {
 }
 
 .user-avatar {
-  width: 150rpx;
-  height: 150rpx;
+  width: 170rpx;
+  height: 170rpx;
   margin-top: 160rpx;
   border-radius: 50%;
 }
@@ -24,18 +24,18 @@ page {
 }
 
 .user-name {
-  font-size: 32rpx;
+  font-size: 38rpx;
   margin-top: 100rpx;
 }
 
 .moto {
   margin-top: 200rpx;
   border: 1rpx solid #fff;
-  width: 250rpx;
+  width: 270rpx;
   height: 80rpx;
   border-radius: 5rpx;
   text-align: center;
-  font-size: 22rpx;
+  font-size: 26rpx;
   line-height: 80rpx;
   background-color: transparent;
 }
@@ -50,5 +50,6 @@ page {
   position: absolute;
   text-align: center;
   bottom: 100rpx;
+  font-size: 32rpx;
   color:#fff;
 }

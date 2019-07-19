@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/welcome/welcome",
-        "pages/index/index",
-    "pages/temp/temp",
+    "pages/index/index",
     "pages/postDetails/postDetails"
   ],
   "window": {
@@ -10,26 +9,6 @@
     "navigationBarBackgroundColor": "#3F69AA",
     "navigationBarTitleText": "北美留学芝士广播",
     "navigationBarTextStyle": "white"
-  },
-  "tabBar": {
-    "color": "#dddddd",
-    "selectedColor": "black",
-    "borderStyle": "white",
-    "backgroundColor": "#fff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-s.png",
-        "text": "主页"
-      },
-      {
-        "pagePath": "pages/temp/temp",
-        "iconPath": "images/info.png",
-        "selectedIconPath": "images/info-s.png",
-        "text": "关于"
-      }
-    ]
   },
   "networkTimeout": {
     "request": 10000,

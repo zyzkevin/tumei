@@ -15,9 +15,10 @@ Page({
    */
   onLoad: function (options) {
     var id = options.id
+    var url = options.url
     var postData = localData.JsonList[id-1]
     this.setData({
-      coverPage: "../../images/" + id +".jpg",
+      coverPage: "http://www.phemiaedu.com/wp-content/uploads"+url,
       author:postData.author,
       title:postData.title,
       content:postData.content

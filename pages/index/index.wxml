@@ -1,14 +1,15 @@
 <view class="container">
-
-      <view class="grid-container">
     <block wx:for="{{showJsonList}}" wx:key = "item">
-      <view class="movie-container">
+      <navigator url="../postDetails/postDetails?id={{item.id}}&url={{item.url}}" hover-class="navigator-hover" hover-stay-time="200" >  
 
-    </view>
-      <navigator url="../postDetails/postDetails?id={{item.id}}" hover-class="navigator-hover">  
-          <image class="postImg" src="../../images/{{item.id}}.jpg"  width="355" height="150" mode="aspectFit"/>  
-        <text class="postTitle">{{item.title}}</text>
+      <view class="image-parent">
+
+      <image class="image" src="http://www.phemiaedu.com/wp-content/uploads{{item.url}}"   mode="aspectFit"/>  
+
+        <text class="child">{{item.title}}</text>
+
+      </view>
+
       </navigator>  
     </block>  
-  </view>
-</view>
+ </view>
