@@ -24,7 +24,7 @@ page {
 }
 
 .user-name {
-  font-size: 38rpx;
+  font-size: 48rpx;
   margin-top: 100rpx;
 }
 

@@ -1,10 +1,10 @@
 <view class="container">
     <block wx:for="{{showJsonList}}" wx:key = "item">
-      <navigator url="../postDetails/postDetails?id={{item.id}}&url={{item.url}}" hover-class="navigator-hover" hover-stay-time="200" >  
+      <navigator url="../{{item.path}}" open-type="switchTab" hover-class="navigator-hover" hover-stay-time="200" >  
 
       <view class="image-parent">
 
-      <image class="image" src="http://www.phemiaedu.com/wp-content/uploads{{item.url}}"   mode="aspectFit"/>  
+      <image class="image" src="http://www.phemiaedu.com/wp-content/uploads{{item.url}}"   mode="scaleToFill"/>  
 
         <text class="child">{{item.title}}</text>
 

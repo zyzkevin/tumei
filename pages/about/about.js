@@ -1,4 +1,5 @@
-// pages/temp/temp.js
+// pages/about/about.js
+var app = getApp()
 Page({
 
   /**
@@ -7,7 +8,10 @@ Page({
   data: {
 
   },
-
+  
+  onShareTap: function (evt) {
+    app.onShareTap()
+  },
   /**
    * Lifecycle function--Called when page load
    */

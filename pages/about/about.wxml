@@ -1,0 +1,18 @@
+<view class="container">
+  <image class="header-image" src="http://www.phemiaedu.com/wp-content/uploads/2019/07/about.jpg" mode="aspectFill"></image>
+  <text class="title">关于我们</text>
+  <view class="tool">
+    <view class="circle-image">
+      <image catchtap="onShareTap" class="share-image" src="/images/share.png"></image>
+    </view>
+    <view class="tool-line"></view>
+  </view>
+  <text class="post-content">Cheese Radio（北美留学芝士广播）灵感源于知识与芝士的相同发音，由北美留学生网旗下的美国本科留学团队倾力打造。以10年（2009-2019）亲历学生案例为资源，致力于传播正确的北美留学知识以及那些充满正能量的留学生故事与思想。
+  
+  办公地址：
+  深证市福田区卓越大厦N308
+  联系电话：
+  0755-8323 8424</text>
+</view>
+
+

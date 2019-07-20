@@ -51,7 +51,7 @@ Page({
   
 
   onTap: function () {
-    wx.redirectTo({
+    wx.switchTab({
       url: '../index/index',
     });
   },

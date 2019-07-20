@@ -1,28 +1,32 @@
-//<import src="../../../wxParse/wxParse.wxml" />
-// pages/postDetails/postDetails.js
-var localData = require("../../data/json.js")
+var WxParse = require('../../wxParse/wxParse.js');
+var localData = require("../../data/activities.js")
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad: function (options) {
+    var that = this
     var id = options.id
     var url = options.url
     var postData = localData.JsonList[id-1]
-    this.setData({
-      coverPage: "http://www.phemiaedu.com/wp-content/uploads"+url,
-      author:postData.author,
-      title:postData.title,
-      content:postData.content
+    var article = ""
+    wx.request({
+      url: postData.content,
+      success: (res) => {
+        WxParse.wxParse('article', 'html', res, this, 5)
+        that.setData({
+          coverPage: "http://www.phemiaedu.com/wp-content/uploads" + url,
+          author: postData.author,
+          title: postData.title,
+        })
+      }
     })
+
+
 
 
     // 设置文章id为页面共享
@@ -43,7 +47,6 @@ Page({
       var collectionList = {};
       wx.setStorageSync('collectionList', collectionList);
     }
-
 
 
   },

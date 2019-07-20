@@ -1,0 +1,43 @@
+<import src="post-item/post-item-template.wxml" />
+<import src="post-item/post-view-template.wxml" />
+<view>
+
+  <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true">
+
+    <swiper-item wx:for="{{showJsonList}}" wx:for-item="swiperItem">
+      <image catchtap="onSwiperTap" src="http://www.phemiaedu.com/wp-content/uploads{{swiperItem.url}}" 
+      
+      data-swiperid="{{swiperItem.id}}" mode="aspectFill"></image>
+      <text class="swiper-title">{{swiperItem.title}}</text>
+      <text class="swiper-author">{{swiperItem.author.name}}</text>
+    </swiper-item>
+  </swiper>
+
+
+  <view class="today-container">
+    <block wx:for="{{feedsData}}" wx:for-item="feeds">
+      <view class="today-content" catchtap="onPostTap" data-postid="{{feeds.id}}">
+        <text class="today-title">{{feeds.title}}</text>
+        <image src="http://www.phemiaedu.com/wp-content/uploads{{feeds.url}}" mode="aspectFill" class="today-img"></image>
+      </view>
+    </block>
+  </view>
+
+
+<!-->
+    <block wx:for="{{showJsonList}}" wx:key = "item">
+      <navigator url="../postDetails/postDetails?id={{item.id}}&url={{item.url}}" hover-class="navigator-hover" hover-stay-time="200" >  
+
+      <view class="image-parent">
+
+      <image class="image" src="http://www.phemiaedu.com/wp-content/uploads{{item.url}}"   mode="scaleToFill"/>  
+
+        <text class="child">{{item.title}}</text>
+
+      </view>
+
+      </navigator>  
+    </block> 
+
+    <--> 
+</view>

@@ -1,8 +1,11 @@
 {
   "pages": [
-    "pages/welcome/welcome",
     "pages/index/index",
-    "pages/postDetails/postDetails"
+    "pages/welcome/welcome",
+    "pages/about/about",
+    "pages/activities/activities",
+    "pages/postDetails/postDetails",
+    "pages/offerWall/offerWall"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,6 +13,37 @@
     "navigationBarTitleText": "北美留学芝士广播",
     "navigationBarTextStyle": "white"
   },
+    "tabBar": {
+      "borderStyle": "white",
+      "selectedColor": "#355A83",
+      "backgroundColor": "#fff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "主页",
+          "iconPath": "/images/home.png",
+          "selectedIconPath": "/images/home-s.png"
+        },
+        {
+          "pagePath": "pages/activities/activities",
+          "text": "活动",
+          "iconPath": "/images/home.png",
+          "selectedIconPath": "/images/home-s.png"
+        },
+        {
+          "pagePath": "pages/offerWall/offerWall",
+          "text": "offer墙",
+          "iconPath": "/images/home.png",
+          "selectedIconPath": "/images/home-s.png"
+        },        
+        {
+          "pagePath": "pages/about/about",
+          "text": "关于",
+          "iconPath": "/images/about.png",
+          "selectedIconPath": "/images/about-s.png"
+        }
+      ]
+    },
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 10000,

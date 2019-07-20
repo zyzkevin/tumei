@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="header-image" src="http://www.phemiaedu.com/wp-content/uploads/2019/07/20190720165933.jpg" mode="aspectFill"></image>
+  <view class="tool">
+    <view class="circle-image">
+      <image catchtap="onShareTap" class="share-image" src="/images/share.png"></image>
+    </view>
+    <view class="tool-line"></view>
+  </view>
+
+    <view class="weui-grids">
+        <view class="weui-grid" wx:for="{{imgArr}}" wx:key="name">
+            <view class='weui-grid__bg'>
+                <view class="weui-grid__icon">
+                  <image src="http://www.phemiaedu.com/wp-content/uploads{{item.src}}" data-index='{{index}}' bindtap='previewImg' mode="scaleToFill"/>
+                </view>
+              <text class="weui-grid__label">{{item.label}}</text>
+            </view>
+        </view>
+    </view>
+</view>

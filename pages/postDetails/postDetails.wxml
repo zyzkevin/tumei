@@ -1,7 +1,9 @@
 <!--pages/postDetails/postDetails.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
 <view class="container">
   <image class="header-image" src="{{coverPage}}" mode="aspectFill"></image>
-  <view class="author-data">
+<view class="author-data">
     <image class="author-image" src="{{author.avatar}}"></image>
     <text class="author">{{author.name}}</text>
   </view>
@@ -14,6 +16,6 @@
     </view>
     <view class="tool-line"></view>
   </view>
-    <text class="post-content">{{content}}</text>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
 </view>
 
