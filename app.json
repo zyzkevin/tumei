@@ -8,13 +8,13 @@
     "pages/offerWall/offerWall"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#3F69AA",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFD662",
     "navigationBarTitleText": "北美留学芝士广播",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
     "tabBar": {
-      "borderStyle": "white",
+      "borderStyle": "black",
       "selectedColor": "#355A83",
       "backgroundColor": "#fff",
       "list": [

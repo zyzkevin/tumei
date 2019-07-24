@@ -1,5 +1,6 @@
 var WxParse = require('../../wxParse/wxParse.js');
 var localData = require("../../data/activities.js")
+
 Page({
 
   /**
@@ -11,23 +12,17 @@ Page({
   onLoad: function (options) {
     var that = this
     var id = options.id
-    var url = options.url
     var postData = localData.JsonList[id-1]
-    var article = ""
-    wx.request({
-      url: postData.content,
-      success: (res) => {
-        WxParse.wxParse('article', 'html', res, this, 5)
-        that.setData({
-          coverPage: "http://www.phemiaedu.com/wp-content/uploads" + url,
-          author: postData.author,
-          title: postData.title,
-        })
-      }
+    var article = postData.content
+    var url = postData.url
+    //check if video
+    WxParse.wxParse('article', 'html', article, this, 5)
+  
+    that.setData({
+      coverPage: "http://www.phemiaedu.com/wp-content/uploads" + url,
+      author: postData.author,
+      title: postData.title,
     })
-
-
-
 
     // 设置文章id为页面共享
     this.setData({

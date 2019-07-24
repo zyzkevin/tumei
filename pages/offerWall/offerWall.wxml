@@ -7,14 +7,19 @@
     <view class="tool-line"></view>
   </view>
 
-    <view class="weui-grids">
-        <view class="weui-grid" wx:for="{{imgArr}}" wx:key="name">
-            <view class='weui-grid__bg'>
+<!-->for loop type of offers and then loop pic of offers<-->
+    <block wx:for="{{showJsonList}}">
+    <text>{{item.type}}</text>
+       <view class="home-view-line"></view>
+      <view class="weui-grids">
+        <view class="weui-grid" wx:for="{{item.offers}}" wx:key="type">
+            <view class='weui-grid__bg'data-index='{{index}}' bindtap='previewImg'>
                 <view class="weui-grid__icon">
-                  <image src="http://www.phemiaedu.com/wp-content/uploads{{item.src}}" data-index='{{index}}' bindtap='previewImg' mode="scaleToFill"/>
+                  <image src="http://www.phemiaedu.com/wp-content/uploads{{item.src}}"  mode="scaleToFill"/>
                 </view>
               <text class="weui-grid__label">{{item.label}}</text>
             </view>
         </view>
     </view>
+    </block>
 </view>
