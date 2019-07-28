@@ -4,7 +4,7 @@
 
       <view class="image-parent">
 
-      <image class="image" src="http://www.phemiaedu.com/wp-content/uploads{{item.url}}"   mode="scaleToFill"/>  
+      <image class="image" src="https://xcx-01-1259715065.cos.ap-chengdu.myqcloud.com/{{item.url}}"   mode="scaleToFill"/>  
 
         <text class="child">{{item.title}}</text>
 
@@ -12,4 +12,7 @@
 
       </navigator>  
     </block>  
+  <button class="kf_button" bindtap='signUp'>
+    <image class="kf_image" src="../../images/calling.png"></image>
+</button>
  </view>

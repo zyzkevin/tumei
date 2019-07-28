@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/welcome/welcome",
+    "pages/index/index",
     "pages/about/about",
     "pages/activities/activities",
     "pages/postDetails/postDetails",
-    "pages/offerWall/offerWall"
+    "pages/offerWall/offerWall",
+    "pages/out/out"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -13,37 +14,37 @@
     "navigationBarTitleText": "北美留学芝士广播",
     "navigationBarTextStyle": "black"
   },
-    "tabBar": {
-      "borderStyle": "black",
-      "selectedColor": "#355A83",
-      "backgroundColor": "#fff",
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "text": "主页",
-          "iconPath": "/images/home.png",
-          "selectedIconPath": "/images/home-s.png"
-        },
-        {
-          "pagePath": "pages/activities/activities",
-          "text": "活动",
-          "iconPath": "/images/home.png",
-          "selectedIconPath": "/images/home-s.png"
-        },
-        {
-          "pagePath": "pages/offerWall/offerWall",
-          "text": "offer墙",
-          "iconPath": "/images/home.png",
-          "selectedIconPath": "/images/home-s.png"
-        },        
-        {
-          "pagePath": "pages/about/about",
-          "text": "关于",
-          "iconPath": "/images/about.png",
-          "selectedIconPath": "/images/about-s.png"
-        }
-      ]
-    },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#355A83",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-hl.png"
+      },
+      {
+        "pagePath": "pages/activities/activities",
+        "text": "活动",
+        "iconPath": "/images/events.png",
+        "selectedIconPath": "/images/events-hl.png"
+      },
+      {
+        "pagePath": "pages/offerWall/offerWall",
+        "text": "offer墙",
+        "iconPath": "/images/offers.png",
+        "selectedIconPath": "/images/offers-hl.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/images/about.png",
+        "selectedIconPath": "/images/about-hl.png"
+      }
+    ]
+  },
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 10000,

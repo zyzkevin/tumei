@@ -1,25 +1,25 @@
 var json = [{
-  "url": "/2019/07/01.jpg",
+  "url": "01.jpg",
   "copyright": "银箔岩彩插画 @井汲面"
 },
 {
-  "url": "/2019/07/02.jpg",
+  "url": "02.jpg",
   "copyright": "银箔岩彩插画 @井汲面"
 },
 {
-  "url": "/2019/07/03.jpg",
+  "url": "03.jpg",
   "copyright": "银箔岩彩插画 @井汲面"
 },
 {
-  "url": "/2019/07/04.jpg",
+  "url": "04.jpg",
   "copyright": "银箔岩彩插画 @井汲面"
 },
   {
-    "url": "/2019/07/05.jpg",
+    "url": "05.jpg",
     "copyright": "银箔岩彩插画 @井汲面"
   },
 {
-  "url": "/2019/07/06.jpg",
+  "url": "06.jpg",
   "copyright": "银箔岩彩插画 @井汲面"
 }
 ]

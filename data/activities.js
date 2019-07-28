@@ -1,6 +1,6 @@
 var json = [{
   "id": 1,
-  "url": "/2019/07/001.jpg",
+  "url": "001.jpg",
   "title": "北美名校嘉年华在深圳举行 深圳新闻网",
   "content": `<!DOCTYPE html>
 <!--<html xmlns="http://www.w3.org/1999/xhtml">-->
@@ -35,7 +35,7 @@ var json = [{
 },
 {
   "id": 2,
-  "url": "/2019/07/003.jpg",
+  "url": "003.jpg",
   "title": "2023届NYU新生见面会深圳站圆满结束 深圳新闻网",
   "content": `
 <html>
@@ -67,7 +67,7 @@ var json = [{
 },
 {
   "id": 3,
-  "url": "/2019/07/002.jpg",
+  "url": "002.jpg",
   "title": "第5届北美名校嘉年华在深举行",
   "content": `
 <html>
@@ -103,7 +103,7 @@ var json = [{
 when swiper and posts under are different
 var feedsjson = [{
   "id": ,
-  "url": "/2019/07/3.jpeg",
+  "url": "3.jpeg",
   "title": "第5届北美名校嘉年华在深举行",
   "content": "",
   "author": {

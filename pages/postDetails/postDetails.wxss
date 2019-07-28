@@ -88,9 +88,6 @@
   height: 90rpx;
 }
 
-.share-image {
-  margin-left: 30rpx;
-}
 
 .horizon {
   width: 660rpx;

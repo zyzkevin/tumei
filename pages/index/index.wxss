@@ -16,7 +16,7 @@
   border: 1px solid #ddd;
   padding: 5px;
   border-radius: 4px;
-  width: 600 rpx;
+  width: 550rpx;
   height: 350rpx; 
 }
 

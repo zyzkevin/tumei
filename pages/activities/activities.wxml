@@ -1,11 +1,11 @@
-<import src="post-item/post-item-template.wxml" />
-<import src="post-item/post-view-template.wxml" />
+<import src="post-item/post-item-template.wxml"/>
+<import src="post-item/post-view-template.wxml"/>
 <view>
 
   <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true">
 
     <swiper-item wx:for="{{showJsonList}}" wx:for-item="swiperItem">
-      <image catchtap="onSwiperTap" src="http://www.phemiaedu.com/wp-content/uploads{{swiperItem.url}}" 
+      <image catchtap="onSwiperTap" src="https://xcx-01-1259715065.cos.ap-chengdu.myqcloud.com/{{swiperItem.url}}" 
       
       data-swiperid="{{swiperItem.id}}" mode="aspectFill"></image>
       <text class="swiper-title">{{swiperItem.title}}</text>
@@ -18,12 +18,15 @@
     <block wx:for="{{feedsData}}" wx:for-item="feeds">
       <view class="today-content" catchtap="onPostTap" data-postid="{{feeds.id}}">
         <text class="today-title">{{feeds.title}}</text>
-        <image src="http://www.phemiaedu.com/wp-content/uploads{{feeds.url}}" mode="aspectFill" class="today-img"></image>
+        <image src="https://xcx-01-1259715065.cos.ap-chengdu.myqcloud.com/{{feeds.url}}" mode="aspectFill" class="today-img"></image>
       </view>
     </block>
+  
   </view>
 
-
+<button class="back_button" bindtap='returnHome'>
+    <image class="back_image" src="../../images/back.png"></image>
+</button>
 <!-->
     <block wx:for="{{showJsonList}}" wx:key = "item">
       <navigator url="../postDetails/postDetails?id={{item.id}}&url={{item.url}}" hover-class="navigator-hover" hover-stay-time="200" >  

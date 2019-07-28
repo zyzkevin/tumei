@@ -3,6 +3,15 @@ var localData = require("../../data/json.js")
 Page({
   data: {
   },
+  signUp: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '0755-83238424'
+    })
+    /*wx.navigateTo({
+      url: '../out/out'
+    })*/
+
+  },
   onLoad: function(options) {
     this.setData({
       showJsonList:localData.JsonList

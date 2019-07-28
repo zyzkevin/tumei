@@ -1,25 +1,10 @@
-// pages/about/about.js
-var app = getApp()
+// pages/out/out.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
-  },
-  returnHome: function (e) {
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
-  signUp: function (e) {
-    wx.makePhoneCall({
-      phoneNumber:'0755-83238424'
-    })
-    /*wx.navigateTo({
-      url: '../out/out'
-    })*/
 
   },
 
@@ -75,16 +60,7 @@ Page({
   /**
    * Called when user click on the top right corner to share
    */
-  onShareAppMessage: function (res) {
-    wx.showToast({ title: '加载中', icon: 'loading', duration: 10000 })
-    if (res.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    wx.hideToast()
-    return {
-      title: '北美留学芝士教育',
-      path: '/pages/welcome/welcome?id=123'
-    }
+  onShareAppMessage: function () {
+
   }
 })

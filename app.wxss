@@ -6,3 +6,73 @@ text{
 page{
   background: #efefef;
 }
+.back_button{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 70rpx;
+  left: 0;
+  top: 10rpx;
+  position: fixed;
+}
+.back_button::after{
+  border: 0px;
+}
+.back_image{
+  border-radius: 50%;
+  z-index: 9999;
+  width: 60rpx;
+  height: 60rpx;
+}
+.canvas-box{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 999999rpx;
+}
+
+.share_button{
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0);
+  width: 90rpx;
+  height: 90rpx;
+}
+.share_button::after {
+  border: 0px;
+}
+.kf_button{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 100rpx;
+  right: 0;
+  bottom: 60rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  border-radius: 50%;
+  z-index: 9999;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.sh_button{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 100rpx;
+  right: 0;
+  bottom: 0rpx;
+}
+.sh_button::after{
+  border: 0px;
+}
+.sh_image{
+  border-radius: 50%;
+  z-index: 9999;
+  width: 100rpx;
+  height: 100rpx;
+}

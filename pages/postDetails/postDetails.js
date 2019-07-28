@@ -19,7 +19,7 @@ Page({
     WxParse.wxParse('article', 'html', article, this, 5)
   
     that.setData({
-      coverPage: "http://www.phemiaedu.com/wp-content/uploads" + url,
+      coverPage: "https://xcx-01-1259715065.cos.ap-chengdu.myqcloud.com/" + url,
       author: postData.author,
       title: postData.title,
     })
@@ -71,6 +71,7 @@ Page({
   },
   onShareTap: function (evt) {
     console.log(1)
+    var that = this
     var itemList = [
       "分享到朋友圈",
       "分享给微信好友"
@@ -81,10 +82,20 @@ Page({
       success: function (res) {
         wx.showModal({
           title: itemList[res.tapIndex],
-          content: "是否取消? " + res.cancel + " 现在无法分享"
+          content: "是否取消? " + " 现在无法分享，请点击右上角分享"
         })
+
       }
     })
+  },
+  signUp: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '0755-83238424'
+    })
+    /*wx.navigateTo({
+      url: '../out/out'
+    })*/
+
   },
   
 
@@ -133,7 +144,17 @@ Page({
   /**
    * Called when user click on the top right corner to share
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    wx.showToast({ title: '加载中', icon: 'loading', duration: 10000 })
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    wx.hideToast()
+    return {
+      title: '北美留学芝士教育',
+      path: '/pages/welcome/welcome?id=123'
+    }
   }
+
 })

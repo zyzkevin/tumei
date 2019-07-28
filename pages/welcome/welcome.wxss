@@ -31,7 +31,7 @@ page {
 .moto {
   margin-top: 200rpx;
   border: 1rpx solid #fff;
-  width: 270rpx;
+  width: 290rpx;
   height: 80rpx;
   border-radius: 5rpx;
   text-align: center;

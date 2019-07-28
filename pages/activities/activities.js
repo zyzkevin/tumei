@@ -3,6 +3,11 @@ var localData = require("../../data/activities.js")
 Page({
   data: {
   },
+  returnHome: function (e) {
+    wx.switchTab({
+      url: '../index/index',
+    })
+  },
   onLoad: function (options) {
     this.setData({
       showJsonList: localData.JsonList,

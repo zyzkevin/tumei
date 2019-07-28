@@ -1,25 +1,38 @@
 <view class="container">
-  <image class="header-image" src="http://www.phemiaedu.com/wp-content/uploads/2019/07/20190720165933.jpg" mode="aspectFill"></image>
+
+  <image class="header-image" src="https://xcx-01-1259715065.cos.ap-chengdu.myqcloud.com/offer.jpg" mode="aspectFit"></image>
   <view class="tool">
     <view class="circle-image">
-      <image catchtap="onShareTap" class="share-image" src="/images/share.png"></image>
+        <button class="sh_button" open-type='share'>
+    <image class="sh_image" src="../../images/share.png"></image>
+      </button>
     </view>
     <view class="tool-line"></view>
   </view>
 
+
 <!-->for loop type of offers and then loop pic of offers<-->
     <block wx:for="{{showJsonList}}">
-    <text>{{item.type}}</text>
-       <view class="home-view-line"></view>
-      <view class="weui-grids">
+    <view class='line'></view>
+    <view class="title">{{item.type}}</view>
+        <view class='line'></view>
+      <view class="weui-grids" data-index='{{index}}' bindtap="param">
         <view class="weui-grid" wx:for="{{item.offers}}" wx:key="type">
             <view class='weui-grid__bg'data-index='{{index}}' bindtap='previewImg'>
                 <view class="weui-grid__icon">
-                  <image src="http://www.phemiaedu.com/wp-content/uploads{{item.src}}"  mode="scaleToFill"/>
+                  <image src="https://xcx-01-1259715065.cos.ap-chengdu.myqcloud.com/{{item.src}}"  mode="scaleToFill"/>
                 </view>
               <text class="weui-grid__label">{{item.label}}</text>
             </view>
         </view>
     </view>
     </block>
+    <button class="kf_button" open-type="share" bindtap='signUp'>
+    <image class="kf_image" src="../../images/calling.png"></image>
+</button>
 </view>
+
+
+<button class="back_button" bindtap='returnHome'>
+    <image class="back_image" src="../../images/back.png"></image>
+</button>
